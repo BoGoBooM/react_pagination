@@ -11,7 +11,7 @@ export const Pagination = ({ total, perPage, currentPage, onPageChange }) => {
 
   const handleNext = () => {
     if (currentPage < pagesCount) {
-      onPageChange(page);
+      onPageChange(currentPage + 1);
     }
   };
 
